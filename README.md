@@ -31,4 +31,4 @@
 MIT License
 
 ---
-Created by [あなたの名前] & Gemini
+Created by Gemini & oboyu
