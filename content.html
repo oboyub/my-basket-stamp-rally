@@ -1,0 +1,64 @@
+<div class="modal-header">
+  <h3>メニュー</h3>
+  <button class="close-btn" onclick="closeModal()">×</button>
+</div>
+
+<div class="modal-body">
+  <section>
+    <h4>📖 使い方</h4>
+    <p>
+      1. 地図上の赤いピン📍やリストを見て、店舗に向かいましょう。<br>
+      2. お店の近く（半径50m以内）に到着したら、<b>「GET」</b>ボタンを押してください。<br>
+      3. 日付と店名入りのスタンプが押されます！<br>
+      4. 東京都内の全店舗制覇を目指して歩きましょう🚶
+    </p>
+  </section>
+
+  <hr>
+
+  <section>
+    <h4>⚙️ 設定</h4>
+    
+    <div class="setting-row">
+      <span>位置判定 (50m制限)</span>
+      <label class="switch">
+        <input type="checkbox" id="geo-toggle" onchange="toggleGeofence()">
+        <span class="slider"></span>
+      </label>
+    </div>
+    <p class="note">※OFFにすると、どこにいてもスタンプが押せます（テスト用）。</p>
+
+    <div class="setting-row">
+      <span>📸 撮影用デモモード</span>
+      <label class="switch">
+        <input type="checkbox" id="demo-toggle" onchange="toggleDemoMode()">
+        <span class="slider"></span>
+      </label>
+    </div>
+    <p class="note">※ONにすると、現在地を「大森駅（まいばす聖地）」に固定します。自宅バレ防止のスクショ撮影に使ってください。</p>
+
+    <div class="setting-btn-area">
+      <button class="danger-btn" onclick="resetData()">スタンプ履歴を全消去</button>
+    </div>
+  </section>
+
+  <hr>
+
+  <section>
+    <h4>⚠️ プライバシーポリシー・免責</h4>
+    <p class="small-text">
+      <b>1. 非公式アプリ</b><br>
+      本アプリは個人のファンによる非公式アプリです。実在の企業（イオングループ様、まいばすけっと株式会社様）とは一切関係ありません。
+    </p>
+    <p class="small-text">
+      <b>2. データの保存について</b><br>
+      位置情報やスタンプの獲得履歴は、お使いのブラウザ内（ローカルストレージ）にのみ保存されます。外部サーバーへ送信されることはありません。
+    </p>
+    <p class="small-text">
+      <b>3. 免責</b><br>
+      本アプリの利用により生じたいかなる損害についても、開発者は責任を負いません。歩きスマホは危険ですのでおやめください。
+    </p>
+  </section>
+  
+  <div class="version-info">Ver 1.0.0</div>
+</div>
